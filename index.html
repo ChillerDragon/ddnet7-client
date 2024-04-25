@@ -5,23 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ddnet 0.7 client</title>
+    <style>
+        body, html {
+            font-size: 24px;
+            color: rgb(61, 61, 61);
+            background-color: #688DB5;
+            background: linear-gradient(to bottom, #688DB5 0%,#C2DFF8 100%);
+            background-attachment: fixed;
+        }
+        .download {
+            height: 100px;
+            background-color: rgb(4, 133, 4);
+            border: 10px solid rgb(18, 110, 18);
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 3fr;
+            grid-gap: 10px;
+            padding: 4px;
+        }
+        .download:hover {
+            background-color: rgb(4, 160, 4);
+            border: 10px solid rgb(33, 134, 33);
+        }
+        .download span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .downloads {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .downloads a {
+            text-decoration: none;
+            color: white;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        .container {
+            max-width: 1500px;
+            margin: auto;
+        }
+        @media screen and (max-width: 1000px) {
+            .downloads {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>DDNet 0.7 client</h1>
-    <p>
-        A ddnet client that can connect to 0.6 and 0.7 servers.
-    </p>
+    <div class="container">
+        <h1>DDNet 0.7 client</h1>
+        <p>
+            A ddnet client that can connect to 0.6 and 0.7 servers.
+        </p>
+        
+        <div class="downloads">
+            <a href="https://github.com/ChillerDragon/ddnet/releases/download/v18.1-ddnet7-003/ddnet-windows-latest.zip">
+                <div class="download">
+                    <img src="https://ddnet.org/download.svg">
+                    <img src="icons/windows.svg">
+                    <span>v18.1 Windows</span>
+                </div>
+            </a>
+            <a href="https://github.com/ChillerDragon/ddnet/releases/download/v18.1-ddnet7-003/ddnet-macOS-latest.zip">
+                <div class="download">
+                    <img src="https://ddnet.org/download.svg">
+                    <img src="icons/macOS.svg">
+                    <span>v18.1 macOS</span>
+                </div>
+            </a>
+            <a href="https://github.com/ChillerDragon/ddnet/releases/download/v18.1-ddnet7-003/ddnet-ubuntu-latest.zip">
+                <div class="download">
+                    <img src="https://ddnet.org/download.svg">
+                    <img src="icons/linux.svg">
+                    <span>v18.1 Linux</span>
+                </div>
+            </a>
+        </div>
 
-    <h2>v18.0.2 (latest and recommended version)</h2>
+        <h2>Older versions</h2>
 
-    <a href="https://github.com/ChillerDragon/ddnet/releases/download/v18.0.2-ddnet7-002/ddnet-windows-latest.zip">Download for Windows</a>
-    <a href="https://github.com/ChillerDragon/ddnet/releases/download/v18.0.2-ddnet7-002/ddnet-macOS-latest.zip">Download for macOS</a>
-    <a href="https://github.com/ChillerDragon/ddnet/releases/download/v18.0.2-ddnet7-002/ddnet-ubuntu-latest.zip">Download for Linux</a>
+        <h3>v18.1</h3>
 
-    <h2>v17.2.1</h2>
+        <a href="https://github.com/ChillerDragon/ddnet/releases/download/v18.1-ddnet7-003/ddnet-windows-latest.zip">Download for Windows</a>
+        <a href="https://github.com/ChillerDragon/ddnet/releases/download/v18.1-ddnet7-003/ddnet-macOS-latest.zip">Download for macOS</a>
+        <a href="https://github.com/ChillerDragon/ddnet/releases/download/v18.1-ddnet7-003/ddnet-ubuntu-latest.zip">Download for Linux</a>
 
-    <a href="https://github.com/ChillerDragon/ddnet/releases/download/v17.2.1-ddnet7-001/ddnet-windows-latest.zip">Download for Windows</a>
-    <a href="https://github.com/ChillerDragon/ddnet/releases/download/v17.2.1-ddnet7-001/ddnet-macOS-latest.zip">Download for macOS</a>
-    <a href="https://github.com/ChillerDragon/ddnet/releases/download/v17.2.1-ddnet7-001/ddnet-ubuntu-latest.zip">Download for Linux</a>
+        <h3>v18.0.2</h3>
+
+        <a href="https://github.com/ChillerDragon/ddnet/releases/download/v18.0.2-ddnet7-002/ddnet-windows-latest.zip">Download for Windows</a>
+        <a href="https://github.com/ChillerDragon/ddnet/releases/download/v18.0.2-ddnet7-002/ddnet-macOS-latest.zip">Download for macOS</a>
+        <a href="https://github.com/ChillerDragon/ddnet/releases/download/v18.0.2-ddnet7-002/ddnet-ubuntu-latest.zip">Download for Linux</a>
+
+        <h3>v17.2.1</h3>
+
+        <a href="https://github.com/ChillerDragon/ddnet/releases/download/v17.2.1-ddnet7-001/ddnet-windows-latest.zip">Download for Windows</a>
+        <a href="https://github.com/ChillerDragon/ddnet/releases/download/v17.2.1-ddnet7-001/ddnet-macOS-latest.zip">Download for macOS</a>
+        <a href="https://github.com/ChillerDragon/ddnet/releases/download/v17.2.1-ddnet7-001/ddnet-ubuntu-latest.zip">Download for Linux</a>
+    </div>
 </body>
 </html>
