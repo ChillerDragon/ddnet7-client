@@ -37,6 +37,15 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 10px;
         }
+        .images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin: 10px;
+        }
+        .images img {
+            border-radius: 3px;
+        }
         .downloads a {
             text-decoration: none;
             color: white;
@@ -50,7 +59,7 @@
             margin: auto;
         }
         @media screen and (max-width: 1000px) {
-            .downloads {
+            .downloads, .images {
                 grid-template-columns: 1fr;
             }
         }
@@ -62,6 +71,14 @@
         <p>
             A ddnet client that can connect to 0.6 and 0.7 servers.
         </p>
+
+        <div class="images">
+            <img src="images/ddnet_07_hats.png">
+            <img src="images/ddnet_07_ready.png">
+            <img src="images/ddnet_07_skins.png">
+            <img src="images/ddnet_07_skins_custom.png">
+        </div>
+
         
         <div class="downloads">
             <a href="https://github.com/ChillerDragon/ddnet/releases/download/v18.1-ddnet7-003/ddnet-windows-latest.zip">
